@@ -37,7 +37,7 @@ void loadSettings()
     BRIGHTNESS = preferences.getUInt("bright");
     #if C_PLUS == 0 || C_PLUS == 1
       M5.Axp.ScreenBreath((BRIGHTNESS-6)*16);
-    #else
+    #elif C_PLUS == 2
       M5.Lcd.setBrightness((BRIGHTNESS-7)*51);
     #endif
   }
