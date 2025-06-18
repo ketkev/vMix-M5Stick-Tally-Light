@@ -54,6 +54,8 @@ void updateBrightnessVar(){
 void updateBrightness(){
   #if C_PLUS == 0 || C_PLUS == 1
     M5.Axp.ScreenBreath((BRIGHTNESS-6)*16);
+  #else
+    M5.Lcd.setBrightness((BRIGHTNESS-7)*51);
   #endif
   saveBrightness();
 }
