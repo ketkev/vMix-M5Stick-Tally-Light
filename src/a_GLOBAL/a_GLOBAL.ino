@@ -14,7 +14,11 @@
 #include <Preferences.h>
 #include "k_PLUGINMANAGER.h";
 
+#if C_PLUS == 2
+#define LED_BUILTIN 19
+#else
 #define LED_BUILTIN 10
+#endif
 
 int tnlen = 1; //LET THIS BE
 

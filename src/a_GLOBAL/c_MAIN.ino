@@ -37,6 +37,11 @@ void setup()
   setCpuFrequencyMhz(80); //Thanks Irvin Cee
   Serial.begin(115200);
   M5.begin();
+
+#if C_PLUS == 2
+  pinMode(4, OUTPUT);
+  digitalWrite(4, HIGH);
+#endif
   
   #if C_PLUS == 0 || C_PLUS == 1
     M5.IMU.Init();
