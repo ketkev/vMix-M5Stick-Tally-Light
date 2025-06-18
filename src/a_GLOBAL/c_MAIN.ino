@@ -207,7 +207,7 @@ void start()
   M5.Lcd.setRotation(screenRotation);
   
   String prod = "vMix M5Stick-C Tally";
-  String author = "by Guido Visser";
+  String author = "by Guido Visser/Kevin";
   
   M5.Lcd.setTextSize(1);
   M5.Lcd.setTextColor(WHITE, BLACK);
